@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: whitesmoke;
+}
+
+.business-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 5px;
+  position: relative;
+}
+
+.card {
+  border: 2px solid black;
+  width: 340px;
+  height: 340px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
