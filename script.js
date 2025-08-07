@@ -27,14 +27,16 @@ fetch(URL)
 
       // Create the image location, you can look up how to add image using javascript
       let img = document.createElement("img");
+
       img.src = business[i].imageurl;
       img.alt = business[i].name;
       img.className = "card-img";
       card.appendChild(img);
+      // document.querySelector("business-card.cards").appendChild(card);
       let p = document.createElement("p");
       p.textContent = business[i].address;
       card.appendChild(p);
-      // document.querySelector("business-card.cards").appendChild(card);
+
       // Include a business Description
       let h3 = document.createElement("h3");
       h3.textContent = business[i].description;
