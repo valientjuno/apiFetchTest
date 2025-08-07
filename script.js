@@ -26,11 +26,11 @@ fetch(URL)
       document.querySelector("div.cards").appendChild(card);
 
       // Create the image location, you can look up how to add image using javascript
-      // let img = document.createElement("image");
-      // img.src = "imageurl";
-      // card.appendChild(img);
-      // document.querySelector("image").appendChild(card);
-      // Include a business location
+      let img = document.createElement("img");
+      img.src = business[i].imageurl;
+      img.alt = business[i].name;
+      img.className = "card-img";
+      card.appendChild(img);
       let p = document.createElement("p");
       p.textContent = business[i].address;
       card.appendChild(p);
