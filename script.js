@@ -15,7 +15,7 @@ fetch(URL)
       // 1. business names, 2.business image,
       // 3. business locations, 4. business descriptions
       // Here is an example for the name to start you off.
-
+      console.log(business);
       // Creates card and places business name in h2 element
       let card = document.createElement("section");
       // Adds a classname to the section element above
@@ -26,9 +26,19 @@ fetch(URL)
       document.querySelector("div.cards").appendChild(card);
 
       // Create the image location, you can look up how to add image using javascript
-
+      // let img = document.createElement("image");
+      // img.src = "imageurl";
+      // card.appendChild(img);
+      // document.querySelector("image").appendChild(card);
       // Include a business location
-
+      let p = document.createElement("p");
+      p.textContent = business[i].address;
+      card.appendChild(p);
+      // document.querySelector("business-card.cards").appendChild(card);
       // Include a business Description
+      let h3 = document.createElement("h3");
+      h3.textContent = business[i].description;
+      card.appendChild(h3);
+      // document.querySelector("business-card.cards").appendChild(card);
     }
   });
